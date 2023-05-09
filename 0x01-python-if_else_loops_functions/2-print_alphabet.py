@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-alphabs = "abcdefghijklmnopqrstuvwxyz"
-
-for i in alphabs:
-    print(f'{i}', end=' ')
+for ch in range(97, 123):
+        print(f"{ch:c}", end='')
