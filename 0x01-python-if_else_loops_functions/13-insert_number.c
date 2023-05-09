@@ -1,4 +1,4 @@
-#include "lists.new_head"
+#include "lists.h"
 
 /**
  * insert_node - inserts a new node
