@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 alphabs = "abcdefghijklmnopqrstuvwxyz"
 
-print(alphabs, end=' ')
+for i in alphabs:
+    print(f'{i}', end=' ')
