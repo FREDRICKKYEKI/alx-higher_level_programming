@@ -9,13 +9,13 @@ if __name__ == "__main__":
         op = args[2]
         match op:
             case '+':
-                print("{} + {} = {}".format(a, b, calc.add(a, b)))
+                print("{} {} {} = {}".format(a, op, b, calc.add(a, b)))
             case '-':
-                print("{} + {} = {}".format(a, b, calc.sub(a, b)))
+                print("{} {} {} = {}".format(a, op, b, calc.sub(a, b)))
             case '*':
-                print("{} + {} = {}".format(a, b, calc.mul(a, b)))
+                print("{} {} {} = {}".format(a, op, b, calc.mul(a, b)))
             case '/':
-                print("{} + {} = {}".format(a, b, calc.div(a, b)))
+                print("{} {} {} = {}".format(a, op, b, calc.div(a, b)))
             case _:
                 print("Unknown operator. Available operators: +, -, * and /")
                 sys.exit(1)
