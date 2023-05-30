@@ -1,7 +1,13 @@
 #!/usr/bin/python3
+"""
+Module which defines a class square
+"""
+
 
 class Square:
-    """Class that defines a square based on 0-square.py"""
+    """
+    Class that defines a square based on 0-square.py
+    """
     def __init__(self, size):
         """Initialize method that stores the size of square
         Args:
