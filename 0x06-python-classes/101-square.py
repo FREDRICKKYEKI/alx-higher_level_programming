@@ -10,6 +10,27 @@ class Square:
         Args:
             size (int): size of square
     """
+    def __str__(self):
+        ret = ""
+        
+        if self.__size == 0:
+            return ret
+
+        else:
+            for i in range(self.__position[1]):
+                ret += "\n"
+
+            for i in range(self.__size):
+                for k in range(self.__position[0]):
+                    ret += " "
+                for j in range(self.__size):
+                    ret += "#"
+                if i is not (self.__size - 1):
+                    ret += "\n"
+            
+            return ret
+
+                
     def __init__(self, size=0, position=(0, 0)):
 
         if type(size) != int:
