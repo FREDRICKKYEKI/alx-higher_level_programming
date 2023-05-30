@@ -5,13 +5,12 @@ Module which continues the definitions of square class
 
 
 class Square:
-    def __init__(self, size=0):
-        """
-        Class that defines a square based on 2-square.py
+    """
+    Class that defines a square based on 2-square.py
         Args:
             size (int): size of square
-        """
-
+    """
+    def __init__(self, size=0):
         if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
