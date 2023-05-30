@@ -1,7 +1,16 @@
 #!/usr/bin/python3
+"""
+module which defines Node and LinkedList
+"""
+
 
 class Node:
-
+    """
+    A class representation of a node
+        Args:
+            data (int): data to be stored
+            next_node (Node): a list node
+    """
     def __init__(self, data, next_node=None):
         self.__data = data
         self.__next_node = next_node
@@ -22,12 +31,18 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-        if type(value) != Node:
+        if type(value) != Node and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
 
 class SinglyLinkedList:
+    """
+    A class representation of a singly Linked List
+        Args:
+            rtn (int): data to be stored
+            ptr: head
+    """
     def __str__(self):
         rtn = ""
         ptr = self.__head
