@@ -5,11 +5,12 @@ module which continues the defination of square class
 
 
 class Square:
-    def __init__(self, size=0, position=(0, 0)):
-        """Class that defines a square based on 4-square.py
+    """
+    Class that defines a square based on 4-square.py
         Args:
             size (int): size of square
-        """
+    """
+    def __init__(self, size=0, position=(0, 0)):
 
         if type(size) != int:
             raise TypeError("size must be an integer")
@@ -26,8 +27,7 @@ class Square:
             self.__position = position
 
     def area(self):
-        """
-        Calculates square area
+        """Calculates square area
             Args:
                 none
             Returns:
@@ -36,8 +36,7 @@ class Square:
         return self.__size**2
     @property
     def size(self):
-        """
-        Gets size of the square
+        """Gets size of the square
             Returns:
                 int: size of aquare
         """
@@ -45,8 +44,7 @@ class Square:
     
     @size.setter
     def size(self, value):
-        """
-        Sets the size of square
+        """Sets the size of square
             Args:
                 int: value to assign to size of square
             Returns:
@@ -81,11 +79,9 @@ class Square:
     @position.setter
     def position(self, value):
         """Sets the position attribute of the square"""
-        if type(value) != tuple or type(value[0]) != int:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if type(value[1]) != int or len(value) > 2:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if value[0] < 0 or value[1] < 0:
+        if type(value) != tuple or type(value[0]) != int \
+                or type(value[1]) != int or len(value) > 2\
+                or value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
