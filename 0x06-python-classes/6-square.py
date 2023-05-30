@@ -1,16 +1,12 @@
 #!/usr/bin/python3
-"""
-module which continues the square class
-"""
-
 
 class Square:
-    """
-    Class that defines a square based on 4-square.py
+    def __init__(self, size=0, position=(0, 0)):
+        """Class that defines a square based on 4-square.py
         Args:
             size (int): size of square
-    """
-    def __init__(self, size=0, position=(0, 0)):
+        """
+
         if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -33,7 +29,6 @@ class Square:
                 int: the current area of square
         """
         return self.__size**2
-
     @property
     def size(self):
         """Gets size of the square
@@ -41,7 +36,7 @@ class Square:
                 int: size of aquare
         """
         return self.__size
-
+    
     @size.setter
     def size(self, value):
         """Sets the size of square
@@ -70,7 +65,7 @@ class Square:
                 for j in range(self.__size):
                     print('#', end='')
                 print()
-
+    
     @property
     def position(self):
         """Returns the position of square"""
@@ -85,3 +80,6 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
+
+       
+
