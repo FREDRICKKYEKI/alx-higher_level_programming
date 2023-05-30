@@ -20,7 +20,8 @@ class Square:
             self.__size = size
 
     def area(self):
-        """Calculates square area
+        """
+        Calculates square area
             Args:
                 none
             Returns:
