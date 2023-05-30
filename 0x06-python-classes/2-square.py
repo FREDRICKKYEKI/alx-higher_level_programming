@@ -1,7 +1,12 @@
 #!/usr/bin/python3
+"""
+Module which is a continuation of the square cLASS
+"""
+
 
 class Square:
-    """Class that defines a square based on 1-square.py
+    """
+    Class that defines a square based on 1-square.py
         Args:
             size (int): size of square
     """
