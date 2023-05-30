@@ -37,6 +37,12 @@ class Node:
 
 
 class SinglyLinkedList:
+    """
+    A class representation of a singly Linked List
+        Args:
+            rtn (int): data to be stored
+            ptr: head
+    """
     def __str__(self):
         rtn = ""
         ptr = self.__head
