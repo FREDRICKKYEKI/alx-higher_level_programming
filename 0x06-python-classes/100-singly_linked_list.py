@@ -9,7 +9,7 @@ class Node:
     @property
     def data(self):
         return self.__data
-    
+
     @data.setter
     def data(self, value):
         if type(value) != int:
@@ -37,12 +37,12 @@ class SinglyLinkedList:
             if ptr.next_node is not None:
                 rtn += "\n"
             ptr = ptr.next_node
-            
+
         return rtn
-    
+
     def __init__(self):
         self.__head = None
-    
+
     def sorted_insert(self, value):
         ptr = self.__head
 
@@ -52,7 +52,7 @@ class SinglyLinkedList:
             ptr_prev = ptr
             ptr = ptr.next_node
 
-        newNode = Node(value, ptr)             
+        newNode = Node(value, ptr)
         if ptr == self.__head:
             self.__head = newNode
         else:
