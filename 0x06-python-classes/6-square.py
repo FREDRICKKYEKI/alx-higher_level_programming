@@ -1,12 +1,16 @@
 #!/usr/bin/python3
+"""
+module which continues the square class
+"""
+
 
 class Square:
-    def __init__(self, size=0, position=(0, 0)):
-        """Class that defines a square based on 4-square.py
+    """
+    Class that defines a square based on 4-square.py
         Args:
             size (int): size of square
-        """
-
+    """
+    def __init__(self, size=0, position=(0, 0)):
         if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
