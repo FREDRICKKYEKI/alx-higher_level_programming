@@ -22,7 +22,8 @@ class Square:
             self.__position = position
 
     def area(self):
-        """Calculates square area
+        """
+        Calculates square area
             Args:
                 none
             Returns:
@@ -31,7 +32,8 @@ class Square:
         return self.__size**2
     @property
     def size(self):
-        """Gets size of the square
+        """
+        Gets size of the square
             Returns:
                 int: size of aquare
         """
@@ -39,7 +41,8 @@ class Square:
     
     @size.setter
     def size(self, value):
-        """Sets the size of square
+        """
+        Sets the size of square
             Args:
                 int: value to assign to size of square
             Returns:
