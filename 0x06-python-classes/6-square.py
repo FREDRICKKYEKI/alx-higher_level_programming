@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+module which continues the defination of square class
+"""
+
 
 class Square:
     def __init__(self, size=0, position=(0, 0)):
