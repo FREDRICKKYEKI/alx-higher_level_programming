@@ -12,7 +12,7 @@ class Square:
     """
     def __str__(self):
         ret = ""
-        
+
         if self.__size == 0:
             return ret
 
@@ -27,10 +27,9 @@ class Square:
                     ret += "#"
                 if i is not (self.__size - 1):
                     ret += "\n"
-            
+
             return ret
 
-                
     def __init__(self, size=0, position=(0, 0)):
 
         if type(size) != int:
