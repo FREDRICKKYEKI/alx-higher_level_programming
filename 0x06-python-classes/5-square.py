@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-module which continues the defination of square class 
+module which continues the defination of square class
 """
 
 
