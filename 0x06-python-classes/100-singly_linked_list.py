@@ -1,7 +1,16 @@
 #!/usr/bin/python3
+"""
+module which defines Node and LinkedList
+"""
+
 
 class Node:
-
+    """
+    A class representation of a node
+        Args:
+            data (int): data to be stored
+            next_node (Node): a list node
+    """
     def __init__(self, data, next_node=None):
         self.__data = data
         self.__next_node = next_node
