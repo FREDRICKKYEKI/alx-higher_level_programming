@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import math
+
+
 """
 module that contains decompiled magic class code
 """
