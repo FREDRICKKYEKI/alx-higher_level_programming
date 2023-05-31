@@ -21,9 +21,9 @@ class Square:
 
         if type(position) != tuple or type(position[0]) != int:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if type(position[1]) != int or len(position) != 2:
+        elif type(position[1]) != int or len(position) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if position[0] < 0 or position[1] < 0:
+        elif len(position) == 2 and (position[0] < 0 or position[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = position
@@ -84,8 +84,8 @@ class Square:
         """Sets the position attribute of the square"""
         if type(value) != tuple or type(value[0]) != int:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if type(value[1]) != int or len(value) != 2:
+        elif type(value[1]) != int or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if value[0] < 0 or value[1] < 0:
+        elif len(position) == 2 and (position[0] < 0 or position[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
