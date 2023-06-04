@@ -12,7 +12,7 @@ Exception raised:
       File "<doctest 101-lazy_matrix_mul.txt[0]>", line 1, in <module>
         matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-      File "/mnt/c/Users/admin/alx-higher_level_programming/0x07-python-test_driven_development/101-lazy_matrix_mul.py", line 8, in <module>
+      File "/mnt/c/Users/admin/alx-higher_level_programming/0x07-python-test_driven_development/101-lazy_matrix_mul.py", line 11, in <module>
         import numpy as np
     ModuleNotFoundError: No module named 'numpy'
 Trying:
