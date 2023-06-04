@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 
+
 module that has the lazy_matrix_multiply function
 that multiplies 2 matrices
 
@@ -12,7 +13,7 @@ def lazy_matrix_mul(m_a, m_b):
     Args:
         m_a (list): matrix a
         m_b (list): matrix b
-    
+
     Returns:
         result of the multiplication
 
