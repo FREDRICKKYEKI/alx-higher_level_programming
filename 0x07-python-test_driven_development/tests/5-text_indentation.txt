@@ -1,0 +1,59 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> g_text = "Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Nulla porta dolor. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+>>> g1_text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Si id dicis, vicimus. Inde sermone vario sex illa a Dipylo stadia confecimus. Sin aliud quid voles, postea. Quae animi affectio suum cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres"
+
+>>> t_text = 1234567
+
+
+>>> s_text = "Nunc sed turpis. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi."
+
+
+>>> text_indentation(g_text)
+Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.
+<BLANKLINE>
+Nulla porta dolor.
+<BLANKLINE>
+Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+<BLANKLINE>
+
+>>> text_indentation(t_text)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(s_text)
+Nunc sed turpis.
+<BLANKLINE>
+Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi.
+<BLANKLINE>
+
+>>> text_indentation(g1_text)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<BLANKLINE>
+Quonam modo?
+<BLANKLINE>
+Utrum igitur tibi litteram videor an totas paginas commovere?
+<BLANKLINE>
+Non autem hoc:
+<BLANKLINE>
+igitur ne illud quidem.
+<BLANKLINE>
+Fortasse id optimum, sed ubi illud:
+<BLANKLINE>
+Plus semper voluptatis?
+<BLANKLINE>
+Teneo, inquit, finem illi videri nihil dolere.
+<BLANKLINE>
+Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens.
+<BLANKLINE>
+Si id dicis, vicimus.
+<BLANKLINE>
+Inde sermone vario sex illa a Dipylo stadia confecimus.
+<BLANKLINE>
+Sin aliud quid voles, postea.
+<BLANKLINE>
+Quae animi affectio suum cuique tribuens atque hanc, quam dico.
+<BLANKLINE>
+Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres

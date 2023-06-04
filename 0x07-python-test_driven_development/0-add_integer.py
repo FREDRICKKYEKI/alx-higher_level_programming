@@ -1,9 +1,27 @@
 #!/usr/bin/python3
 
-def add_integer(a, b=98):
+"""
+
+add module that adds two integers
+
+"""
+
+
+def add_integer(a, b=98) -> int:
+    """This is a simple add function that adds two integers
+
+    Args:
+        a (int): first integer
+        b (int): second integer initialized to 98
+
+    Returns:
+        result (int): a + b
+
+    Raises:
+        TypeError: if a or b are not int/float
+
     """
-    This is a simple add function
-    """
+
     if type(a) != int and type(a) != float:
         raise TypeError("a must be an integer")
     elif type(b) != int and type(b) != float:
