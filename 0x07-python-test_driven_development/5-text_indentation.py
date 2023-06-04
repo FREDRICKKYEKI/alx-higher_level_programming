@@ -7,12 +7,12 @@ Module which contains text_indentation function
 
 
 def text_indentation(text):
-    """ function that prints a text with 2 new lines after each 
+    """ function that prints a text with 2 new lines after each
     of these characters: ., ? and :
-    
+
     Args:
         text (str): text to be indented
-    
+
     Return:
         None
 
