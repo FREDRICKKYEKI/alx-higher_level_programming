@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 
-module that continues the Rectangle class 
+module that continues the Rectangle class
 
 """
 
@@ -34,7 +34,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """ 
+        """
         method that defines the width
 
         Args:
@@ -53,7 +53,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """ 
+        """
         method that returns the value of the height
 
         Returns:

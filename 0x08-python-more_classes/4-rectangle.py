@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 
-module that continues the Rectangle class 
+module that continues the Rectangle class
 
 """
 
@@ -12,7 +12,7 @@ class Rectangle:
     """
     def __str__(self):
         """
-        Instance method that returns an “informal” and nicely printable 
+        Instance method that returns an “informal” and nicely printable
         string representation of an instance
 
         Returns:
@@ -31,7 +31,7 @@ class Rectangle:
         return rtn
 
     def __repr__(self):
-        """ 
+        """
         Method that returns the string represantion of the instance
 
         Returns:
@@ -39,7 +39,6 @@ class Rectangle:
 
         """
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
-
 
     def __init__(self, width=0, height=0):
         """ Method that initializes the instance
@@ -64,7 +63,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """ 
+        """
         method that defines the width
 
         Args:
@@ -83,7 +82,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """ 
+        """
         method that returns the value of the height
 
         Returns:
