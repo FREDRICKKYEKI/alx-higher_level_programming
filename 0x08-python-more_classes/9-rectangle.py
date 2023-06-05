@@ -182,5 +182,5 @@ class Rectangle:
             a new instance of Rectangle class
 
         """
-        square = Rectangle(size, size)
+        square = cls(size, size)
         return square
