@@ -29,7 +29,7 @@ class Rectangle:
             for j in range(self.width):
                 rtn += '#'
             rtn += '\n'
-        return rtn
+        return rtn[:-1]
 
     def __init__(self, width=0, height=0):
         """ Method that initializes the instance
