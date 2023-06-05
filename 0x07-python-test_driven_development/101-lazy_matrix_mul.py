@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 
-
 module that has the lazy_matrix_multiply function
 that multiplies 2 matrices
 
