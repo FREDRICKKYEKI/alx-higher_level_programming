@@ -28,7 +28,7 @@ class Rectangle:
             for j in range(self.width):
                 rtn += '#'
             rtn += '\n'
-        return rtn
+        return rtn[:-1]
 
     def __repr__(self):
         """
