@@ -7,8 +7,11 @@ extends the BaseGeometry class
 
 """
 
+
 class Square(Rectangle):
-    """ Class that defines a Square from Rectangle class """
+    """
+    Class that defines a Square from Rectangle class
+    """
     def __init__(self, size):
         """ Method that initializes a Square """
         self.integer_validator("size", size)

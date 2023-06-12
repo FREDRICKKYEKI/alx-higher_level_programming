@@ -33,4 +33,3 @@ class Rectangle(BaseGeometry):
         Method that returns the area of the instance
         """
         return self.__width * self.__height
-
