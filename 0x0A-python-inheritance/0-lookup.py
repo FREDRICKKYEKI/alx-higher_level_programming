@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+
+Module that function look up
+
+"""
 def lookup(obj):
     """
     Function that returns the list of available attributes
