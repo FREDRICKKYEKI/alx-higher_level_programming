@@ -144,8 +144,8 @@ class Rectangle(Base):
         Function that runs when class is passed in
         print function
         """
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} -"\
-               "{self.width}/{self.height}"
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} -" + str(
+                f" {self.width}/{self.height}")
 
     """Needs to be checked"""
     def update(self, *args, **kwargs):
