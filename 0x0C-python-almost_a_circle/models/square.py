@@ -37,6 +37,15 @@ class Square(Rectangle):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}"
 
     def update(self, *args, **kwargs):
+        """
+        Function that assigns an argument to each
+        attribute:
+
+        Args:
+            *args (tuple): arguments of variable length passed
+            **kwargs (dict): key-word arguments of variable length
+                             passed
+        """
         length = len(args)
         if length >= 1 and args is not None:
             if length >= 1:
