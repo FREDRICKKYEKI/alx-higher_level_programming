@@ -9,6 +9,7 @@ import json
 import os.path
 import csv
 
+
 class Base:
     """
     Class that is the base class of the
@@ -56,7 +57,7 @@ class Base:
         list_dic = []
 
         if not list_objs:
-             pass
+            pass
         else:
             for obj in list_objs:
                 list_dic.append(obj.to_dictionary())

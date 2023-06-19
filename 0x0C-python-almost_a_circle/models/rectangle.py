@@ -129,10 +129,10 @@ class Rectangle(Base):
             k += 1
         while i < self.height:
             j = 0
-            l = 0
-            while l < self.x:
+            m = 0
+            while m < self.x:
                 print(' ', end='')
-                l += 1
+                m += 1
             while j < self.width:
                 print('#', end='')
                 j += 1
@@ -144,7 +144,8 @@ class Rectangle(Base):
         Function that runs when class is passed in
         print function
         """
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} -"\
+               "{self.width}/{self.height}"
 
     """Needs to be checked"""
     def update(self, *args, **kwargs):
