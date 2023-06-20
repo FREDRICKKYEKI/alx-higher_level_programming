@@ -9,6 +9,9 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """
+    Class square that inherits from Base class
+    """
     def __init__(self, size, x=0, y=0, id=None):
         """
         Function that initializes the Square class
