@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
+
 module that contains the Square class that
 extends the Rectangle class
+
 """
 from models.rectangle import Rectangle
 
