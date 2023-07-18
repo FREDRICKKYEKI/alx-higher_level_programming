@@ -3,4 +3,4 @@
 SELECT
     *
 FROM
-    first_table
+    first_table;

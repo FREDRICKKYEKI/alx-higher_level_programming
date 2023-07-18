@@ -5,4 +5,4 @@ SELECT
 FROM
     first_table
 WHERE
-    id = 89
+    id = 89;
