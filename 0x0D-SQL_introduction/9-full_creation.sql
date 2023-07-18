@@ -1,6 +1,6 @@
 #!/bin/bash
 -- a script that creates a table second_table
---in the database hbtn_0c_0.
+-- in the database hbtn_0c_0.
 database=$1
 mysql -u root -p <<EOF
 USE $database
