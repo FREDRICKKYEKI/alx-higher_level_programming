@@ -8,7 +8,7 @@ Prototype: function (x, theFunction)
 You are not allowed to use var
  */
 
-function callMeMoby(x, theFunction) {
+function callMeMoby (x, theFunction) {
   for (let i = 0; i < x; i++) {
     theFunction();
   }

@@ -8,7 +8,7 @@ Prototype: function (number, theFunction)
 You are not allowed to use var
  */
 
-function addMeMaybe(number, theFunction) {
+function addMeMaybe (number, theFunction) {
   let j = 0;
 
   for (let i = 0; i <= number; i++) j = i;
