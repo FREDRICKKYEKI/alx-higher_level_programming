@@ -19,14 +19,14 @@ class Rectangle {
     }
   }
 
-  print() {
-    let w = this.width;
-    let h = this.height;
+  print () {
+    const w = this.width;
+    const h = this.height;
     let row;
 
     for (let i = 0; i < h; i++) {
       row = '';
-      for (let j = 0; j < w; j ++) {
+      for (let j = 0; j < w; j++) {
         row += 'X';
       }
       console.log(row);

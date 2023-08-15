@@ -8,7 +8,7 @@
  */
 
 module.exports.esrever = function (list) {
-  let reversedList = [];
+  const reversedList = [];
   let i = list.length - 1;
 
   while (i >= 0) {
@@ -17,4 +17,4 @@ module.exports.esrever = function (list) {
   }
 
   return (reversedList);
-}
+};

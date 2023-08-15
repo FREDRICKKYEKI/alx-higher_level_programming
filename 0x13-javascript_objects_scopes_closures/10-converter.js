@@ -8,7 +8,6 @@
  * You are not allowed to declare any new variable (var, let, etc..)
  */
 
-
 module.exports.converter = function (base) {
-  return (num) => num.toString(base)
-}
+  return (num) => num.toString(base);
+};
