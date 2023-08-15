@@ -91,22 +91,22 @@
 // console.log(esrever([1, 2, 3, 4, 5]));
 // console.log(esrever(["School", 89, { id: 12 }, "String"]));
 
-// const logMe = require('./9-logme').logMe;
+const logMe = require('./9-logme').logMe;
 
-// logMe("Hello");
-// logMe("Best");
-// logMe("School");
+logMe("Hello");
+logMe("Best");
+logMe("School");
 
-const converter = require('./10-converter').converter;
+// const converter = require('./10-converter').converter;
 
-let myConverter = converter(10);
+// let myConverter = converter(10);
 
-console.log(myConverter(2));
-console.log(myConverter(12));
-console.log(myConverter(89));
+// console.log(myConverter(2));
+// console.log(myConverter(12));
+// console.log(myConverter(89));
 
-myConverter = converter(16);
+// myConverter = converter(16);
 
-console.log(myConverter(2));
-console.log(myConverter(12));
-console.log(myConverter(89));
+// console.log(myConverter(2));
+// console.log(myConverter(12));
+// console.log(myConverter(89));
