@@ -36,6 +36,6 @@ if __name__ == '__main__':
     states = session.query(State).first()
 
     if (states.count() > 0):
-        print(states.id, ':', states.name)
+        print("{}: {}".format(state.id, state.name))
     else:
         print('')
