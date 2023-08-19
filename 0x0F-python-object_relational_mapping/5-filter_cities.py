@@ -31,5 +31,4 @@ if __name__ == '__main__':
                 """, (argv[4],))
     states = cur.fetchall()
 
-    for state in states:
-        print(state[0], end=', ')
+    print(", ".join([state[0] for state in states]))
