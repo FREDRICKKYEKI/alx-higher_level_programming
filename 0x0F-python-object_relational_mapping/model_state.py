@@ -19,17 +19,17 @@
 
 
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
 
 class State(Base):
-    """class that defines a State
-    CREATE TABLE IF NOT EXISTS states (
-        id INT NOT NULL AUTO_INCREMENT,
-        name VARCHAR(256) NOT NULL,
-        PRIMARY KEY (id)
+    """class that defines a State\n
+    `CREATE TABLE IF NOT EXISTS states` (\n
+        `id` `INT` `NOT` `NULL` `AUTO_INCREMENT`,\n
+        `name` `VARCHAR(256)` `NOT` `NULL`,\n
+        `PRIMARY KEY(id)`\n
     );
     """
     __tablename__ = 'states'
