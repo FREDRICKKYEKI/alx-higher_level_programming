@@ -10,8 +10,6 @@ import requests
 
 
 if __name__ == "__main__":
-    r = requests.get('https://intranet.hbtn.io/status')
-    t = r.text
-    print('Body response:')
-    print('\t- type: {}'.format(type(t)))
-    print('\t- content: {}'.format(t))
+    req = requests.get('https://intranet.hbtn.io/status')
+    t = req.text
+    print('Body response:\n\t- type: {}\n\t- content: {}'.format(type(t), t))
