@@ -6,7 +6,8 @@ Write a Python script that takes 2 arguments in order to solve this challenge.
     -You must use the packages requests and sys
     -You are not allowed to import packages other than requests and sys
     -You don’t need to check arguments passed to the script (number or type)
-    -Only 17% of applicants for a backend position at Holberton finished this task
+    -Only 17% of applicants for a backend position at Holberton finished
+    this task
     in less than 15 minutes.
 """
 from requests import get, auth
@@ -23,5 +24,5 @@ if __name__ == "__main__":
         for i in range(0, 10):
             print("{}: {}".format(json[i].get('sha'), json[i].get('commit')
                                   .get('author').get('name')))
-    except:
+    except Exception as e:
         pass
