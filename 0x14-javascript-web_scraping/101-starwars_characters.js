@@ -11,32 +11,44 @@
 const request = require('request');
 
 let id = parseInt(process.argv[2], 10);
-const url = 'https://swapi-api.alx-tools.com/api/films/';
+const url = `https://swapi-api.alx-tools.com/api/films/${id}/`;
 
-request(url, (err, res, body) => {
-  if (err) {
-    console.log(err);
-  } else {
-    const results = JSON.parse(body).results;
-
-    if (id < 4) {
-      id += 3;
-    } else {
-      id -= 3;
-    }
-
-    results.forEach((result) => {
-      if (result.episode_id === id) {
-        result.characters.forEach((char) => {
-          request(char, (err2, res2, body2) => {
-            if (err2) {
-              console.log(err2);
-            } else {
-              console.log(JSON.parse(body2).name);
-            }
-          });
-        });
-      }
+/**
+ * Fetches the name of a Star Wars character from a given URL.
+ * @param {string} url - The URL of the Star Wars character API.
+ * @returns {Promise<string>} - A promise that resolves with the name of the character.
+ */
+const fetchCharacter = async (url) => {
+  return new Promise((resolve, reject) => {
+    request(url, (err, res, body) => {
+      if (err) reject(err);
+      resolve(JSON.parse(body).name);
     });
+  });
+};
+
+/**
+ * Fetches data for a Star Wars film and logs the names of its characters to the console.
+ * @async
+ * @function fetchFilm
+ * @param {number} id - The ID of the film to fetch.
+ * @returns {Promise<void>} - A Promise that resolves when all character names have been logged.
+ */
+const fetchFilm = async (id) => {
+  const url = `https://swapi-api.alx-tools.com/api/films/${id}/`;
+  const body = await new Promise((resolve, reject) => {
+    request(url, (err, res, body) => {
+      if (err) reject(err);
+      resolve(body);
+    });
+  });
+
+  const filmData = JSON.parse(body);
+  const characters = filmData.characters;
+  for (let i = 0; i < characters.length; i++) {
+    const charName = await fetchCharacter(characters[i]);
+    console.log(charName);
   }
-});
+};
+
+fetchFilm(id);
