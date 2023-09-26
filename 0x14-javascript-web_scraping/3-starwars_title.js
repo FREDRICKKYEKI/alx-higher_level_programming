@@ -13,7 +13,8 @@ const id = process.argv[2];
 const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
 request(url, (err, res, body) => {
-  if (err == null) {
-    console.log(JSON.parse(body).title);
+  if (error == null) {
+    const json = JSON.parse(body);
+    console.log(json.title);
   }
 });
