@@ -10,7 +10,7 @@
  */
 const request = require('request');
 
-let id = parseInt(process.argv[2]);
+let id = parseInt(process.argv[2], 10);
 const url = 'https://swapi-api.alx-tools.com/api/films/';
 
 request(url, (err, res, body) => {
