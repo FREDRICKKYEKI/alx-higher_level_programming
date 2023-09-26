@@ -19,8 +19,9 @@ request(url, (err, res, body) => {
     const results = JSON.parse(body);
     results.characters.forEach((char) => {
       request(char, (err2, res2, body2) => {
-        if (err2) return;
-        else {
+        if (err2) {
+          console.log(err2);
+        } else {
           console.log(JSON.parse(body2).name);
         }
       });
