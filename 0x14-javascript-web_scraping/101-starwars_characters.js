@@ -10,8 +10,7 @@
  */
 const request = require('request');
 
-let id = parseInt(process.argv[2], 10);
-const url = `https://swapi-api.alx-tools.com/api/films/${id}/`;
+const id = parseInt(process.argv[2], 10);
 
 /**
  * Fetches the name of a Star Wars character from a given URL.
