@@ -12,9 +12,8 @@ const url = process.argv[2];
 request(url, (err, res, body) => {
   if (err) {
     console.log(err);
-    return;
   } else {
-    let complObj = {};
+    const complObj = {};
     for (const todo of JSON.parse(body)) {
       if (todo.completed) {
         if (complObj[todo.userId]) {

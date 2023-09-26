@@ -14,7 +14,6 @@ const url = process.argv[2];
 request(url, (err, res, body) => {
   if (err) {
     console.log(err);
-    return;
   } else {
     const results = JSON.parse(body).results;
     let count = 0;

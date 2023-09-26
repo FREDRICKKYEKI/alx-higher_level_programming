@@ -11,12 +11,11 @@
 const request = require('request');
 
 let id = parseInt(process.argv[2]);
-const url = `https://swapi-api.alx-tools.com/api/films/`;
+const url = 'https://swapi-api.alx-tools.com/api/films/';
 
 request(url, (err, res, body) => {
   if (err) {
     console.log(err);
-    return;
   } else {
     const results = JSON.parse(body).results;
 
