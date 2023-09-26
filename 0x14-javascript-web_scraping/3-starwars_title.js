@@ -10,12 +10,11 @@
 const request = require('request');
 
 const id = process.argv[2];
-const url = `https://swapi-api.alx-tools.com/api/films/${id}/`;
+// const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
-request(url, (err, res, body) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(JSON.parse(body).title);
+request('http://swapi.co/api/films/' + id + '/', (err, resp, body) => {
+  if (err == null) {
+    const json = JSON.parse(body);
+    console.log(json.title);
   }
 });
