@@ -13,5 +13,5 @@ $.ajax({
   referrerPolicy: 'strict-origin-when-cross-origin',
   success: function (data) {
     $('DIV#hello').text(data.hello);
-  },
+  }
 });
